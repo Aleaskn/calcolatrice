@@ -5,8 +5,7 @@ import Calculator from './calculator/Calculator'
 
 const calculator = [
   {
-    previw: '',
-    output: '',
+    screen: '',
     grid: ''
   }
 ]
