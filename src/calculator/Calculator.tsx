@@ -2,18 +2,14 @@ import './Calculator.css';
 import React from 'react'
 import { TypeOfTag } from 'typescript'
 import Grid from './Grid';
-import PreviousOperations from './PreviousOperations'
-import CurrentOperand from './CurrentOperand'
-import Output from './Output'
+import Output from './Screen';
 
 interface ICalculator {
-  preview : IPreviw,
-  output : IOutput,
-  current: ICurrent,
-  grid: IGrid
+  screen : string,
+  grid: string
 }
 
-const Calculator : React.FC<ICalculator> = ({ preview, output, current, grid }) => {
+const Calculator : React.FC<ICalculator> = ({ screen, grid }) => {
   return (
 
 <div className='calculator'>
